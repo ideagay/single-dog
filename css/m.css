@@ -1,0 +1,422 @@
+body{background:url("../img/img_bg_01.png") repeat-y;
+    background-size: cover;
+    color: #fff; font: 12px/1.5  Arial, "Microsoft YaHei", Verdana, Helvetica, sans-serif;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-select: none;
+}
+body>a{ display: none; }
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hide{display: none;}
+#loading{
+    display: block;
+    font-size: 30px;
+    line-height: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+.liebao{
+    width: 102px;
+    height: 118px;
+    margin: 20% auto -10px auto;
+    display: block;
+    background: url(../img/liebao.png) no-repeat center;
+    background-size: contain;
+}
+
+#index{background: url("../img/img_bg_02.png") no-repeat;background-size:cover;}
+
+#index .btns{ text-align: center;  width: 100%;}
+
+#index #start{
+    position: absolute; bottom: 7%;
+    left: 0;
+}
+#start .btn{
+    width: 40%;
+    display: inline-block;
+}
+.spark{
+     -webkit-animation: spark 0.5s infinite ease-in-out;
+}
+@-webkit-keyframes spark{ 
+ 0%{color: #2ec8ea}
+ 40%{color: #86f23b}
+ 80%{color: #fef7a5}
+ 100%{color: #00ccff} 
+}
+#room{
+    background:url("../img/img_bg_01.png") repeat-y 0 -100px;
+    background-size: cover;
+}
+#room header{
+    padding: 10px 37px 10px 37px;
+}
+#room header .time.danger{
+    color: #FF0505;
+}
+footer{
+    position: relative;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    font-size: 10px;
+}
+footer .logo{
+    width: 38px;
+    height: 38px;
+}
+#help{
+    font-size: 1.5em;
+    color: #fef7a5;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#box{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0 auto;
+}
+#box span{
+    display: block;
+    float: left;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    background: url(../img/cgw.png) no-repeat;
+    background-size: contain;
+}
+
+#box.lv2 span{
+    width: 50%;
+    height: 50%;
+}
+#box.lv3 span{
+    width: 33.33%;
+    height: 33.33%;
+}
+#box.lv4 span{
+    width: 25%;
+    height: 25%;
+}
+#box.lv5 span{
+    width: 20%;
+    height: 20%;
+}
+#box.lv6 span{
+    width: 16.666%;
+    height: 16.666%;
+}
+#box.lv7 span{
+    width: 14.28%;
+    height: 14.28%;
+}
+#box.lv8 span{
+    width: 12.5%;
+    height: 12.5%;
+}
+#box.lv9 span{
+    width: 11.111%;
+    height: 11.111%;
+}
+#box.lv10 span{
+    width: 10%;
+    height: 10%;
+}
+#box span img{
+    width: 100%;
+}
+
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+/*room*/
+#box{
+    width: 320px;
+    height:320px;
+}
+#room header .te{
+    width: 120px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 12px;
+    color: #000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#room header .te em{
+    font-style: normal;
+    text-align: center;
+    position: absolute;
+    display: block;
+    top:0;
+    width: 25%;
+    left:49%;
+    font-size: 2em;
+}
+#room header .lv{
+    background: url("../img/img_02.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+#room header .time{
+    background: url("../img/img_03.png") no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+/*dialog*/
+#dialog{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#dialog .inner{
+    width: 100%;
+}
+#dialog .inner .content{
+    padding-top: 20px;
+}
+
+#dialog .inner p{ margin: 0;}
+
+.btn {
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    background: none;
+}
+.btn img{
+    width:100%;
+}
+
+#dialog .result-txt{
+    width: 100%;
+    height: 44px;
+    margin-bottom: 20px;
+    background: url("../img/img_05.png") no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+#dialog .result-txt .point{
+    color:#df001a;
+    text-align: center;
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 44px;
+    line-height: 44px;
+    left: 58%;
+    top: 0;
+}
+#dialog .btn-wrap{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 42px;
+}
+
+#dialog .btn-wrap .btn{
+    width:45%;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+    float: left;
+    margin:13px auto;
+}
+#dialog .btn-wrap .btn.btn-restart{
+    float: left;
+}
+#dialog .btn-wrap .btn.btn-share{
+    float: right;
+}
+#dialog .btn-wrap .btn img{
+    width: 100%;
+}
+#dialog .result-img{
+    width: 100%;
+    margin: 0 auto;
+}
+#dialog .result-img img{
+    width: 100%;
+}
+.hb{
+    position: absolute;
+    z-index: 999;
+    right:7%;
+    bottom:20px;
+    width: 59px;
+    height: 65px;
+}
+.share-tip{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color:rgba(0,0,0,.7) ;
+    top:0;
+    left: 0;
+}
+.share-tip img{
+    width: 100%;
+}
+
+/*music*/
+.mediaControl{
+    width: 28px;
+    height: 28px;
+    background: url("../img/playMedia.png") no-repeat center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999999;
+    background-size: 28px 28px;
+    display:block;
+}
+.mediaControl_p{
+    background: url("../img/puaseMedia.png") no-repeat center;
+    background-size: 28px 28px;
+}
+
+/*-- iphone4 320 竖屏 --*/
+@media screen and (max-device-width:320px) and (min-device-height: 480px){
+    /*room*/
+    #box{
+        width:235px;
+        height:235px;
+    }
+    #room header .te{
+        width: 90px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 10px;
+    }
+
+    /*dialog*/
+    #dialog .result-txt{
+        margin-bottom: 0;
+    }
+    #dialog .btn-wrap{
+        padding:0 42px;
+    }
+    #dialog .btn-wrap .btn{
+        margin:10px 0;
+    }
+    #dialog .result-img{
+        width: 85%;
+    }
+    #dialog .inner .content{
+        padding-top: 5px;
+    }
+
+}
+
+/*-- iphone5 320 竖屏 --*/
+@media screen and (max-device-width:320px) and (min-device-height: 568px) {
+    /*room*/
+    #box{
+        width:300px;
+        height:300px;
+    }
+    #room header .te{
+        width: 90px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 10px;
+    }
+    /*dialog*/
+    #dialog .result-txt{
+        margin-bottom: 10px;
+    }
+    #dialog .btn-wrap{
+        padding:0 42px;
+    }
+    #dialog .btn-wrap .btn{
+        margin:30px 0;
+    }
+    #dialog .result-img{
+        width: 100%;
+    }
+    #dialog .inner .content{
+        padding-top: 5px;
+    }
+}
+
+/*-- android 360 竖屏 --*/
+@media screen and (min-device-width:321px) and (max-device-width:361px) and (min-device-height: 481px){
+    #box{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* iphone6  竖屏 */
+@media screen and (min-width:375px){
+    #box{
+        width: 320px;
+        height: 320px;
+    }
+
+    #room header .te{
+        width: 120px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 12px;
+        color: #000;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+}
+/* iphone6 plus 竖屏 */
+@media screen and (min-device-width:414px){
+    #room header{
+        margin:20px 0;
+    }
+    #box{
+        width: 360px;
+        height: 360px;
+        margin-bottom: 20px;
+    }
+    #room header .te{
+        width: 120px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 12px;
+        color: #000;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    #dialog footer{
+        margin-top: 30px;
+    }
+}
+

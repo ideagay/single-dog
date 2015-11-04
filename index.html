@@ -1,0 +1,73 @@
+﻿
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+        <meta http-equiv="expires" content="-1">
+        <title>全民寻找单身狗</title>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/m.css">
+    </head>
+    <body>
+        <div class="grid">
+            <audio preload="auto" id="music" loop>
+                <source src="music.mp3" type="audio/mpeg">
+            </audio>
+            <i class="mediaControl" id="music-ctrl" style="display: none"></i>
+            <div class="page hide" id="loading">
+                loading...
+            </div>
+            <div class="page hide" id="index">
+                <div class="btns" id="start" >
+                    <a class="btn play-btn"><img src="img/img_04.png"/> </a>
+                </div>
+            </div>
+            <div class="page hide" id="room">
+                <div><img src="img/img_01.png" style="width:100%;"/></div>
+                <header class="clearfix">
+                    <span class="te lv">
+                        <em>
+                            0
+                        </em>
+                    </span>
+                    <span class="te time"><em>45</em></span>
+                </header>
+                <div id="box" class="lv1">
+                </div>
+                <footer>
+                    <img src="img/logo.png" class="logo"/>
+                    <div>车果网-专业汽车贷款服务平台</div>
+                </footer>
+            </div>
+            <div class="page hide" id="dialog">
+                <div><img src="img/img_01.png" style="width:100%;"/></div>
+                <div class="inner">
+                    <div class="content gameover">
+                        <div class="result-txt"><span class="point"></span></div>
+                        <div class="result-img animated fadeInBig"><img src="img/result.png"/></div>
+                        <h3></h3>
+                        <div class="btn-wrap clearfix">
+                            <button class="btn btn-restart">
+                                <img src="img/img_07.png"/>
+                            </button>
+                            <button class="btn btn-share">
+                                <img src="img/img_06.png"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <img src="img/logo.png" class="logo"/>
+                    <div>车果网-专业汽车贷款服务平台</div>
+                    <a href="http://weixin.cgw360.com/down-app"><img src="img/money.png" class="hb animated infinite bounce"/></a>
+                </footer>
+            </div>
+        </div>
+        <div class="share-tip"><img src="img/open-tip.png"/> </div>
+        <script src="js/base.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
